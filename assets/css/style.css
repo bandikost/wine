@@ -924,6 +924,7 @@ hr {
     }
 
 
+
     .nav__link {
         margin: 10px 55px;
     }
@@ -1016,7 +1017,7 @@ hr {
     }
 
     .collection__suptitle:after {
-        width: 290px;
+        left: 10px;
         margin: 50px auto 0 50px;
 
     }
@@ -1157,7 +1158,7 @@ hr {
         flex: 1 1 0;
         width: 50%;
         position: relative;
-        left: -100px;
+        left: -50px;
         font-size: 17px;
       }
     
@@ -1583,7 +1584,7 @@ hr {
         color: white;
         list-style: disc;
         position: relative;
-        top: -50px;
+        top: -20px;
   
       }
     
@@ -1592,7 +1593,7 @@ hr {
         flex: 1 1 0;
         width: 50%;
         position: relative;
-        left: -100px;
+        left: -30px;
         font-size: 17px;
       }
     
