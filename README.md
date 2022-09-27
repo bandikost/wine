@@ -3,7 +3,7 @@
  </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/-JavaScript-yellow" alt="JavaScript">
+  <img src="https://img.shields.io/badge/-php-plum" alt="PHP">
     <img src="https://img.shields.io/badge/-CSS-blueviolet" alt="CSS">
     <img src="https://img.shields.io/badge/-Html-orange" alt="Html">
 </p>
