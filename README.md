@@ -12,6 +12,11 @@
   
 -  Самый первый проект, в котором я использовал js и php. 
 - [x] Отправка формы на почту.
+
+- [ ] <p align="center"> 
+  <img src="https://i.ibb.co/G5R4HHt/q-FTa-Ghyr-MVk.jpg" alt="" width="720">
+ </p>
+ 
 - [x] Работа с модальными окнами 
 <p align="center"> 
   <img src="https://i.ibb.co/M5sCwYM/Pb-TDV-8-G70g.jpg" alt="" width="720">
