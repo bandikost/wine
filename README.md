@@ -11,7 +11,7 @@
 ## О проекте
   
 -  Самый первый проект, в котором я использовал js и php. 
-- [x] Отправка формы на почту.
+- [x] Отправка формы на почту, при помощи <img src="https://img.shields.io/badge/-PHP-plum" alt="PHP">
 
 - [ ] <p align="center"> 
   <img src="https://i.ibb.co/G5R4HHt/q-FTa-Ghyr-MVk.jpg" alt="" width="720">
