@@ -30,13 +30,48 @@
 
 
 -  Также можно будет увидеть работу кроссбразуерной и адаптивной верстки
-if (document.querySelectorAll('.table-office')) {
-	  var productCartTableSort = document.querySelectorAll('.table-office');
+<div class="full-table-wrap"> <!-- контент -->
+            <?php
+            echo '<div class="main-table__content">
+                    <table id="mytable" class="main-table__table-office">
+                        <thead>
+                            <tr>
+                                <th>№ помещения</th>
+                                <th>Назначение помещения</th>
+                                <th>Количество комнат</th>
+                                <th>Площадь, м&sup2;</th>
+                                <th>Арендная ставка, руб./м&sup2; в месяц</th>
+                                <th>Арендная плата в месяц, руб.</th>
+                                <th>Примечание</th>
+                                <th>Этаж</th>
+                                <th>Бизнес центр</th>
+                            </tr>
+                        </thead>
+					    <tbody>';
 
-	  for (var i = 0; i < productCartTableSort.length; i++) {
-	    $(productCartTableSort[i]).tablesorter();
-	    $(productCartTableSort[i], "tr:even").addClass('even').classList.toggle("active");
-	    $(productCartTableSort[i], "tr:odd").addClass('odd').classList.toggle("active");
-		
-	  }
-	}
+            $sql = "SELECT * FROM modx_allbc WHERE isChecked=1";
+            $result = $conn->query($sql);
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    echo '<tr>';
+                    echo '<td><a href="rent/office.php?id=' . $row['id'] . '&bc=' . $_GET['bc'] . '" target="_blank">' . $row['number'] . '</a></td>';
+                    echo '<td>' . $row['type'] . '</td>';
+                    echo '<td>' . $row['rooms'] . '</td>';
+                    echo '<td>' . $row['area'] . '</td>';
+                    echo '<td>' . $row['price'] . '</td>';
+                    echo '<td>' . $row['summ'] . '</td>';
+                    echo '<td>' . $row['comment'] . '</td>';
+                    echo '<td>' . $row['floor'] . '</td>';
+                    echo '<td>' . $row['bc'] . '</td>';
+                    echo '</tr>';
+                }
+            } else {
+                echo "0 results";
+            }
+            $conn->close();
+            echo '      </tbody>
+			        </table> 
+			      </div>';
+            ?>
+
+        </div>
