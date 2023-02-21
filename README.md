@@ -30,3 +30,13 @@
 
 
 -  Также можно будет увидеть работу кроссбразуерной и адаптивной верстки
+if (document.querySelectorAll('.table-office')) {
+	  var productCartTableSort = document.querySelectorAll('.table-office');
+
+	  for (var i = 0; i < productCartTableSort.length; i++) {
+	    $(productCartTableSort[i]).tablesorter();
+	    $(productCartTableSort[i], "tr:even").addClass('even').classList.toggle("active");
+	    $(productCartTableSort[i], "tr:odd").addClass('odd').classList.toggle("active");
+		
+	  }
+	}
